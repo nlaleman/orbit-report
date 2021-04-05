@@ -9,10 +9,11 @@
     <tr>
    <!-- TODO: put <tr *ngFor=""></tr> here -->
    <tr *ngFor="let satellite of satellites">
-    <td>{{name}}</td>
-    <td>{{type}}</td>
-    <td>{{operational}}</td>
-    <td>{{orbitType}}</td>
-    <td>{{launchdate}}</td>
+<td>{{satellite.name}}</td>
+<td>{{satellite.type}}</td>
+<td>{{satellite.operational}}</td>
+<td>{{satellite.orbitType}}</td>
+<td>{{satellite.launchDate}}</td>
+
    </tr>
 </table>
