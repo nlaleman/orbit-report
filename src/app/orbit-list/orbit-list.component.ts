@@ -30,18 +30,18 @@ export class OrbitListComponent implements OnInit {
     });
  }
 
-//  search(searchTerm: string): void {
-//    let matchingSatellites: Satellite[] = [];
-//    searchTerm = searchTerm.toLowerCase();
-//    for(let j=0; j < this.sourceList.length; j++) {
-//       let name = this.sourceList[j].name.toLowerCase();
-//       if (name.indexOf(searchTerm) >= 0) {
-//          matchingSatellites.push(this.sourceList[j]);
-//       }
-//    }
-//    // assign this.displayList to be the array of matching satellites
-//    // this will cause Angular to re-make the table, but now only containing matches
-//    this.displayList = matchingSatellites;
-// }
+search(searchTerm: string): void {
+   let matchingSatellites: Satellite[] = [];
+   searchTerm = searchTerm.toLowerCase();
+   for(let j=0; j < this.sourceList.length; j++) {
+      let name = this.sourceList[j].name.toLowerCase();
+      if (name.indexOf(searchTerm) >= 0) {
+         matchingSatellites.push(this.sourceList[j]);
+      }
+   }
+   // assign this.displayList to be the array of matching satellites
+   // this will cause Angular to re-make the table, but now only containing matches
+   this.displayList = matchingSatellites;
+}
 
 }
